@@ -21,6 +21,8 @@ import debug_toolbar
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
+    path('favicon.ico', views.favicon),
+    path('logo192.png', views.logo),
     path('api/', include("backend.api.urls")),
     path('__debug__/', include(debug_toolbar.urls)),
 ]

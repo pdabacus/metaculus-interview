@@ -22,7 +22,7 @@ run: build
 srv/app/node_modules:
 	cd srv/app; npm install
 
-local-builldjs: srv/app/node_modules
+local-buildjs: srv/app/node_modules
 	cd srv/app; npm run build
 
 local-run:
