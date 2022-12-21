@@ -57,7 +57,7 @@ class Chart extends Component<ChartProps, {}> {
     render() {
         return (
             <div>
-                <h2>{this.props.name}</h2>
+                <h3>{this.props.name}</h3>
                 <svg id={this.props.chart_id}></svg>
             </div>
         );

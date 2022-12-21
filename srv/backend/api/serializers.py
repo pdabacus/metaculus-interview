@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import Room
+from .models import Chart
 
 
-class RoomSerializer(serializers.ModelSerializer):
+class ChartSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Room
-        fields = ("id", "code")
+        model = Chart
+        fields = ("id", "chart_name", "chart_id", "chart_data")
